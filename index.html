@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tim Rudd - Tennessee House District 34</title>
+  <meta name="description" content="Tim Rudd for Tennessee House District 34. Conservative leadership, constituent service, property rights, election integrity, and Rutherford County values." />
+  <style>
+    :root {
+      --red: #842424;
+      --red-dark: #5d1a1a;
+      --blue: #245b82;
+      --blue-dark: #173d5a;
+      --gold: #b99642;
+      --green: #5f6f4f;
+      --ink: #20262b;
+      --muted: #626b70;
+      --line: #ded8ce;
+      --paper: #faf6ee;
+      --white: #ffffff;
+      --shadow: 0 18px 44px rgba(18, 31, 46, 0.12);
+      --radius: 8px;
+      --font-display: "Aptos Display", "Arial Nova", "Helvetica Neue", Arial, sans-serif;
+      --font-body: Aptos, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: var(--font-body);
+      color: var(--ink);
+      background: var(--paper);
+      line-height: 1.55;
+    }
+    img { max-width: 100%; display: block; }
+    a { color: inherit; }
+
+    .skip-link {
+      position: absolute;
+      left: 16px;
+      top: -48px;
+      z-index: 20;
+      background: var(--white);
+      color: var(--ink);
+      padding: 10px 14px;
+      border: 2px solid var(--blue);
+    }
+    .skip-link:focus { top: 12px; }
+
+    .topline {
+      background: var(--blue-dark);
+      color: var(--white);
+      font-family: var(--font-body);
+      font-size: 0.9rem;
+    }
+    .topline .wrap {
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      padding: 8px 24px;
+      max-width: 1180px;
+      margin: 0 auto;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(251, 250, 247, 0.96);
+      border-bottom: 1px solid var(--line);
+      backdrop-filter: blur(10px);
+    }
+    .nav {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 12px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 28px;
+    }
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 14px;
+      text-decoration: none;
+      min-width: 210px;
+    }
+    .brand img { width: 82px; height: auto; }
+    .brand span {
+      display: block;
+      font-family: var(--font-display);
+      font-weight: 800;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: var(--red-dark);
+      font-size: 0.88rem;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      padding: 0;
+      margin: 0;
+      font-family: var(--font-display);
+      font-size: 0.92rem;
+      font-weight: 700;
+    }
+    nav a {
+      text-decoration: none;
+      color: var(--ink);
+    }
+    nav a:hover, nav a:focus { color: var(--red); }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 12px 18px;
+      border-radius: 6px;
+      border: 2px solid transparent;
+      font-family: var(--font-display);
+      font-weight: 800;
+      text-decoration: none;
+      letter-spacing: 0.02em;
+      line-height: 1.1;
+    }
+    .button.primary {
+      background: var(--red);
+      color: var(--white);
+    }
+    .button.primary:hover, .button.primary:focus { background: var(--red-dark); }
+    .button.secondary {
+      background: var(--white);
+      color: var(--blue-dark);
+      border-color: var(--blue);
+    }
+    .button.secondary:hover, .button.secondary:focus { background: #eef6fb; }
+    .button.gold {
+      background: var(--gold);
+      color: #151515;
+    }
+    .button.gold:hover, .button.gold:focus { background: #b08b2f; }
+
+    main { overflow: hidden; }
+    .section {
+      padding: 76px 24px;
+    }
+    .wrap {
+      max-width: 1180px;
+      margin: 0 auto;
+    }
+    .eyebrow {
+      font-family: var(--font-display);
+      color: var(--blue);
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      font-size: 0.78rem;
+      margin: 0 0 10px;
+    }
+    h1, h2, h3, p { margin-top: 0; }
+    h1 {
+      font-family: var(--font-display);
+      font-size: clamp(2.45rem, 5.6vw, 4.85rem);
+      line-height: 0.98;
+      letter-spacing: 0.01em;
+      font-weight: 900;
+      margin-bottom: 18px;
+      color: var(--white);
+    }
+    h2 {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.08;
+      letter-spacing: 0.01em;
+      font-weight: 900;
+      margin-bottom: 18px;
+    }
+    h3 {
+      font-family: var(--font-display);
+      font-size: 1.25rem;
+      line-height: 1.2;
+      letter-spacing: 0.01em;
+      font-weight: 900;
+      margin-bottom: 8px;
+    }
+
+    .hero {
+      position: relative;
+      background:
+        linear-gradient(110deg, rgba(93, 26, 26, 0.95), rgba(23, 61, 90, 0.88)),
+        url("tim-rudd-site-assets/tim-rudd-portrait.jpg") center top / cover no-repeat;
+      color: var(--white);
+      min-height: 720px;
+      display: grid;
+      align-items: end;
+      padding: 110px 24px 64px;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: auto 0 0 0;
+      height: 10px;
+      background: linear-gradient(90deg, var(--red) 0 34%, var(--white) 34% 66%, var(--blue) 66% 100%);
+    }
+    .hero-grid {
+      position: relative;
+      z-index: 1;
+      max-width: 1180px;
+      margin: 0 auto;
+      width: 100%;
+      display: grid;
+      grid-template-columns: minmax(0, 1.05fr) minmax(300px, 0.72fr);
+      gap: 48px;
+      align-items: end;
+    }
+    .hero-copy p {
+      font-size: 1.2rem;
+      font-weight: 650;
+      max-width: 650px;
+      color: #f4eee2;
+    }
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 28px;
+    }
+    .hero-sign {
+      background: rgba(255, 255, 255, 0.96);
+      color: var(--ink);
+      border-radius: var(--radius);
+      padding: 24px;
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(255, 255, 255, 0.4);
+    }
+    .hero-sign img {
+      width: 170px;
+      margin-bottom: 18px;
+    }
+    .hero-sign dl {
+      margin: 0;
+      display: grid;
+      gap: 12px;
+      font-family: var(--font-body);
+    }
+    .hero-sign dt {
+      color: var(--muted);
+      font-size: 0.76rem;
+      text-transform: uppercase;
+      letter-spacing: 0.09em;
+      font-weight: 800;
+    }
+    .hero-sign dd {
+      margin: 2px 0 0;
+      font-weight: 800;
+    }
+
+    .split {
+      display: grid;
+      grid-template-columns: minmax(0, 0.95fr) minmax(280px, 1.05fr);
+      gap: 48px;
+      align-items: start;
+    }
+    .portrait-frame {
+      position: relative;
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      background: var(--white);
+    }
+    .portrait-frame::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 8px;
+      background: linear-gradient(90deg, var(--red), var(--gold), var(--blue));
+    }
+    .portrait-frame img {
+      width: 100%;
+      aspect-ratio: 4 / 5;
+      object-fit: cover;
+      object-position: center top;
+    }
+    .text-panel {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 28px;
+      box-shadow: 0 8px 24px rgba(18, 31, 46, 0.06);
+    }
+    .fact-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 24px;
+    }
+    .fact {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 16px;
+      background: #fffdf9;
+      font-family: var(--font-body);
+    }
+    .fact strong {
+      display: block;
+      color: var(--red-dark);
+      font-size: 1.25rem;
+    }
+    .fact span { color: var(--muted); font-size: 0.9rem; }
+
+    .local-note {
+      margin-top: 24px;
+      padding: 18px 20px;
+      border-left: 5px solid var(--green);
+      background: #f3efe6;
+      color: var(--ink);
+      border-radius: 0 var(--radius) var(--radius) 0;
+      font-family: var(--font-body);
+      font-weight: 700;
+    }
+
+    .band {
+      background: var(--white);
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 28px;
+    }
+    .card {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 22px;
+    }
+    .card::before {
+      content: "";
+      display: block;
+      width: 46px;
+      height: 4px;
+      margin-bottom: 18px;
+      background: var(--red);
+    }
+    .card p { color: var(--muted); margin-bottom: 0; }
+
+    .record-list {
+      display: grid;
+      gap: 14px;
+      margin-top: 28px;
+    }
+    .record-item {
+      display: grid;
+      grid-template-columns: 160px minmax(0, 1fr);
+      gap: 18px;
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--white);
+    }
+    .record-item .date {
+      font-family: var(--font-display);
+      color: var(--blue);
+      font-weight: 800;
+      text-transform: uppercase;
+      font-size: 0.82rem;
+    }
+    .record-item p { margin-bottom: 0; color: var(--muted); }
+
+    .logo-band {
+      background: linear-gradient(110deg, var(--red-dark), var(--blue-dark));
+      color: var(--white);
+      padding: 42px 24px;
+    }
+    .logo-band .wrap {
+      display: grid;
+      grid-template-columns: 190px minmax(0, 1fr) auto;
+      gap: 28px;
+      align-items: center;
+    }
+    .logo-band img {
+      width: 150px;
+    }
+    .logo-band p { margin-bottom: 0; color: #f4eee2; }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: minmax(280px, 0.8fr) minmax(0, 1.2fr);
+      gap: 28px;
+      align-items: start;
+    }
+    .contact-list {
+      display: grid;
+      gap: 16px;
+      margin: 0;
+      font-family: var(--font-body);
+    }
+    .contact-list div {
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 14px;
+    }
+    .contact-list dt {
+      color: var(--muted);
+      font-size: 0.78rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-weight: 800;
+    }
+    .contact-list dd {
+      margin: 3px 0 0;
+      font-weight: 700;
+    }
+    form {
+      display: grid;
+      gap: 14px;
+    }
+    .field-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+    }
+    label {
+      display: grid;
+      gap: 6px;
+      font-family: var(--font-display);
+      font-size: 0.82rem;
+      color: var(--muted);
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+    }
+    input, select, textarea {
+      width: 100%;
+      min-height: 44px;
+      border: 1px solid #b9c0c8;
+      border-radius: 6px;
+      padding: 10px 12px;
+      font: 1rem var(--font-body);
+      color: var(--ink);
+      background: var(--white);
+    }
+    textarea { min-height: 130px; resize: vertical; }
+    input:focus, select:focus, textarea:focus {
+      outline: 3px solid rgba(31, 95, 143, 0.22);
+      border-color: var(--blue);
+    }
+    .notice {
+      color: var(--muted);
+      font-size: 0.92rem;
+      margin-bottom: 0;
+    }
+
+    footer {
+      background: #14181d;
+      color: var(--white);
+      padding: 38px 24px;
+      font-family: var(--font-body);
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 150px minmax(0, 1fr) auto;
+      gap: 28px;
+      align-items: center;
+    }
+    footer img {
+      width: 120px;
+    }
+    footer p {
+      margin-bottom: 4px;
+      color: #c8ced4;
+      font-size: 0.9rem;
+    }
+    footer a { color: var(--white); }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+
+    @media (max-width: 900px) {
+      .topline .wrap, .nav, .hero-grid, .split, .contact-grid, .logo-band .wrap, .footer-grid {
+        grid-template-columns: 1fr;
+      }
+      .topline .wrap, .nav {
+        display: grid;
+      }
+      nav ul {
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+      .hero {
+        min-height: auto;
+        padding-top: 68px;
+      }
+      .hero-grid {
+        display: grid;
+      }
+      .cards, .fact-grid {
+        grid-template-columns: 1fr;
+      }
+      .record-item {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .section { padding: 54px 18px; }
+      .topline .wrap, .nav, .hero { padding-left: 18px; padding-right: 18px; }
+      .field-grid { grid-template-columns: 1fr; }
+      .hero-actions .button, .logo-band .button { width: 100%; }
+      .brand { min-width: 0; }
+      .brand img { width: 70px; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="topline" aria-label="Election information">
+    <div class="wrap">
+      <span>Republican Primary: August 6, 2026</span>
+      <span>Tennessee House District 34 - Part of Rutherford County</span>
+    </div>
+  </div>
+
+  <header>
+    <div class="nav">
+      <a class="brand" href="#main" aria-label="Tim Rudd home">
+        <img src="tim-rudd-site-assets/tim-rudd-logo-clean.png" alt="Tim Rudd State Representative 34th District logo" />
+        <span>Tim Rudd<br />District 34</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <ul>
+          <li><a href="#about">Biography</a></li>
+          <li><a href="#priorities">Priorities</a></li>
+          <li><a href="#record">Record</a></li>
+          <li><a href="#constituents">Constituents</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a class="button gold" href="#support">Support</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-label="Tim Rudd campaign introduction">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow" style="color:#f6d66b">Tennessee House District 34</p>
+          <h1>Representative Tim Rudd</h1>
+          <p>Experienced conservative leadership for Rutherford County, rooted in small business, property rights, constituent service, and the everyday concerns of families from Murfreesboro to Smyrna.</p>
+          <div class="hero-actions">
+            <a class="button gold" href="#constituents">Constituent Services</a>
+            <a class="button secondary" href="#record">Legislative Record</a>
+          </div>
+        </div>
+        <aside class="hero-sign" aria-label="Quick facts">
+          <img src="tim-rudd-site-assets/tim-rudd-logo-clean.png" alt="Tim Rudd campaign logo" />
+          <dl>
+            <div>
+              <dt>Office</dt>
+              <dd>Tennessee House of Representatives</dd>
+            </div>
+            <div>
+              <dt>District</dt>
+              <dd>District 34, part of Rutherford County</dd>
+            </div>
+            <div>
+              <dt>Current role</dt>
+              <dd>Chair, Elections and Campaign Finance Subcommittee</dd>
+            </div>
+          </dl>
+        </aside>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="wrap split">
+        <div class="portrait-frame">
+          <img src="tim-rudd-site-assets/tim-rudd-portrait.jpg" alt="Portrait of Tim Rudd" />
+        </div>
+        <div>
+          <p class="eyebrow">Biography</p>
+          <h2>A Rutherford County record with deep local roots</h2>
+          <p>Representative Tim Rudd was raised in Murfreesboro and Smyrna, graduated from Smyrna High School, and attended Middle Tennessee State University. Before serving in the Tennessee House, he built a career as a real estate agent, direct mail consultant, and small business owner, giving him a practical understanding of budgets, regulation, property, and the pressures facing working families.</p>
+          <p>Rudd first became involved in public life after a local annexation dispute threatened a neighbor's property. That experience shaped the approach he has carried into office: defend property rights, keep government accountable, and make sure ordinary citizens are not pushed aside by bureaucracy.</p>
+          <p>His service is also personal. After his father passed away in 1984, Rudd helped support his mother. Years later, he served as her caregiver as she battled dementia until her passing at age 91. That experience continues to inform his work on senior issues, caregiver concerns, and family-centered public policy.</p>
+          <div class="local-note">Rudd's public service reflects the place that shaped him: steady, neighborly, practical, and proud of Rutherford County's growth without losing sight of its hometown character.</div>
+          <div class="fact-grid" aria-label="Verified profile facts">
+            <div class="fact">
+              <strong>District 34</strong>
+              <span>Part of Rutherford County</span>
+            </div>
+            <div class="fact">
+              <strong>Since 2017</strong>
+              <span>Serving in the Tennessee House</span>
+            </div>
+            <div class="fact">
+              <strong>Chair</strong>
+              <span>Elections and Campaign Finance Subcommittee</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="priorities" class="section band">
+      <div class="wrap">
+        <p class="eyebrow">Priorities</p>
+        <h2>Focused on the issues that matter at home</h2>
+        <p class="notice">Representative Rudd's work in Nashville is shaped by the conversations he has with families, business owners, seniors, teachers, and taxpayers across District 34.</p>
+        <div class="cards">
+          <article class="card">
+            <h3>Election integrity</h3>
+            <p>As chair of the Elections and Campaign Finance Subcommittee, Rudd has focused on secure elections, transparent rules, and public confidence in the process.</p>
+          </article>
+          <article class="card">
+            <h3>Property rights</h3>
+            <p>From his first involvement in local government, Rudd has treated private property as a core constitutional issue and a practical concern for homeowners and small businesses.</p>
+          </article>
+          <article class="card">
+            <h3>Small business</h3>
+            <p>With decades in the private sector, Rudd understands that Tennessee grows stronger when entrepreneurs can work, hire, invest, and build without unnecessary red tape.</p>
+          </article>
+          <article class="card">
+            <h3>Senior issues</h3>
+            <p>Rudd's own experience as a caregiver gives him a direct understanding of the pressure families face when caring for aging parents and loved ones with dementia.</p>
+          </article>
+          <article class="card">
+            <h3>Local government</h3>
+            <p>Local decisions should be open, accountable, and fair to taxpayers. Rudd has consistently pushed for government that answers to citizens, not insiders.</p>
+          </article>
+          <article class="card">
+            <h3>Public safety</h3>
+            <p>Safe neighborhoods are the foundation of a strong community. Rudd supports law enforcement, first responders, and policies that hold offenders accountable.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="record" class="section">
+      <div class="wrap">
+        <p class="eyebrow">Public Record</p>
+        <h2>An experienced voice in Nashville</h2>
+        <p>Since taking office in 2017, Representative Rudd has built a record around election integrity, lawful government, property rights, public safety, senior issues, and the conservative principles that continue to make Tennessee strong.</p>
+        <div class="record-list">
+          <article class="record-item">
+            <div class="date">April 13, 2026</div>
+            <div>
+              <h3>Advance notice for relocating homeless individuals</h3>
+              <p>Rudd advanced legislation requiring notice before homeless individuals are relocated, reflecting a focus on transparency, planning, and local accountability.</p>
+            </div>
+          </article>
+          <article class="record-item">
+            <div class="date">March 19, 2026</div>
+            <div>
+              <h3>Legislative process integrity and accountability</h3>
+              <p>Rudd proposed reforms to strengthen integrity and accountability in the legislative process, emphasizing that government works best when citizens can trust the rules.</p>
+            </div>
+          </article>
+          <article class="record-item">
+            <div class="date">March 17, 2026</div>
+            <div>
+              <h3>Verification of lawful status in government hiring</h3>
+              <p>Rudd passed legislation requiring verification of lawful status in state and local government hiring, keeping taxpayer-funded employment aligned with the law.</p>
+            </div>
+          </article>
+        </div>
+        <div class="hero-actions" style="margin-top:28px">
+          <a class="button primary" href="https://tnhousegop.org/members/representative-tim-rudd/" target="_blank" rel="noopener">Read more updates</a>
+          <a class="button secondary" href="https://wapp.capitol.tn.gov/apps/LegislatorInfo/Member?district=H34" target="_blank" rel="noopener">Official House profile</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="constituents" class="section band">
+      <div class="wrap split">
+        <div>
+          <p class="eyebrow">Constituent Service</p>
+          <h2>Helping District 34 navigate state government</h2>
+          <p>Representative Rudd's office is available to help constituents with state agency questions, legislative concerns, state services, and issues affecting Rutherford County families.</p>
+          <p>Constituent service is part of the job. Whether the question comes from a longtime Smyrna family, a Murfreesboro small business owner, a senior caregiver, or a new neighbor settling into District 34, the goal is the same: listen, respond, and help where state government is involved.</p>
+        </div>
+        <div class="text-panel">
+          <h3>Common ways the office can help</h3>
+          <div class="record-list" style="margin-top:18px">
+            <article class="record-item" style="grid-template-columns:1fr">
+              <div>
+                <h3>State agency concerns</h3>
+                <p>Questions involving state departments, licensing, benefits, records, or agency responsiveness.</p>
+              </div>
+            </article>
+            <article class="record-item" style="grid-template-columns:1fr">
+              <div>
+                <h3>Legislative issues</h3>
+                <p>Ideas, concerns, or feedback about bills, state policy, and priorities for the General Assembly.</p>
+              </div>
+            </article>
+            <article class="record-item" style="grid-template-columns:1fr">
+              <div>
+                <h3>Local impact</h3>
+                <p>Issues affecting Rutherford County families, neighborhoods, small businesses, seniors, schools, and taxpayers.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="support" class="logo-band" aria-label="Support campaign">
+      <div class="wrap">
+        <img src="tim-rudd-site-assets/tim-rudd-logo-clean.png" alt="Tim Rudd campaign logo" />
+        <div>
+          <h2 style="margin-bottom:8px">Stay connected with Team Rudd</h2>
+          <p>From neighborhood conversations to community events, the campaign is built on the same neighbor-to-neighbor trust that has defined Rudd's years of service in Rutherford County.</p>
+        </div>
+        <a class="button gold" href="mailto:info@timrudd34.com?subject=Join%20Team%20Rudd">Join the team</a>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="wrap contact-grid">
+        <div class="text-panel">
+          <p class="eyebrow">Contact</p>
+          <h2>Reach the office</h2>
+          <dl class="contact-list">
+            <div>
+              <dt>Nashville office</dt>
+              <dd>425 Rep. John Lewis Way N., Suite 544, Cordell Hull Building, Nashville, TN 37243</dd>
+            </div>
+            <div>
+              <dt>Phone</dt>
+              <dd><a href="tel:+16157412804">(615) 741-2804</a></dd>
+            </div>
+            <div>
+              <dt>Email</dt>
+              <dd><a href="mailto:Rep.Tim.Rudd@capitol.tn.gov">Rep.Tim.Rudd@capitol.tn.gov</a></dd>
+            </div>
+            <div>
+              <dt>Official profile</dt>
+              <dd><a href="https://wapp.capitol.tn.gov/apps/LegislatorInfo/Member?district=H34" target="_blank" rel="noopener">Tennessee General Assembly</a></dd>
+            </div>
+            <div>
+              <dt>Campaign</dt>
+              <dd><a href="mailto:info@timrudd34.com">info@timrudd34.com</a></dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="text-panel">
+          <h3>Send a message</h3>
+          <p class="notice">Use this form for constituent help, campaign involvement, events, yard signs, or issues important to District 34.</p>
+          <form action="mailto:info@timrudd34.com" method="post" enctype="text/plain">
+            <div class="field-grid">
+              <label>First name
+                <input name="first_name" autocomplete="given-name" required />
+              </label>
+              <label>Last name
+                <input name="last_name" autocomplete="family-name" required />
+              </label>
+            </div>
+            <div class="field-grid">
+              <label>Email
+                <input type="email" name="email" autocomplete="email" required />
+              </label>
+              <label>ZIP code
+                <input name="zip" inputmode="numeric" autocomplete="postal-code" />
+              </label>
+            </div>
+            <label>Topic
+              <select name="topic">
+                <option>Constituent issue</option>
+                <option>Volunteer with Team Rudd</option>
+                <option>Request a yard sign</option>
+                <option>Host an event</option>
+                <option>Campaign question</option>
+                <option>Media request</option>
+              </select>
+            </label>
+            <label>Message
+              <textarea name="message" required></textarea>
+            </label>
+            <button class="button primary" type="submit">Send message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="section band" aria-label="Voter resources">
+      <div class="wrap">
+        <p class="eyebrow">Voter Resources</p>
+        <h2>Useful election links</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Register to vote</h3>
+            <p><a href="https://sos.tn.gov/elections/voter-registration" target="_blank" rel="noopener">Tennessee Secretary of State voter registration</a></p>
+          </article>
+          <article class="card">
+            <h3>Find election resources</h3>
+            <p><a href="https://sos.tn.gov/elections/find-your-election-resources" target="_blank" rel="noopener">Polling place and district lookup</a></p>
+          </article>
+          <article class="card">
+            <h3>Election date</h3>
+            <p>Republican Primary: August 6, 2026. Make a plan to vote and check your registration, polling place, and ballot information early.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-grid">
+      <img src="tim-rudd-site-assets/tim-rudd-logo-clean.png" alt="Tim Rudd campaign logo" />
+      <div>
+        <p>Paid for by Tim Rudd for State Representative.</p>
+        <p>Political campaign communications are intended for residents, supporters, and voters in Tennessee House District 34.</p>
+      </div>
+      <a class="button secondary" href="#main">Back to top</a>
+    </div>
+  </footer>
+</body>
+</html>
